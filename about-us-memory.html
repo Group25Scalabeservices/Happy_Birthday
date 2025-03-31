@@ -1,0 +1,127 @@
+<html>
+<div style="margin-top: 20px;">
+
+  <figure class="wave">
+    <a href="about-us/about-us1.html"><img src="about-us/about-us1.png"></img></a>
+    <figcaption>Our Trekking Experience</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="about-us/about-us3.html"><img src="about-us/about-us3.png"></img></a>
+    <figcaption>Guwahati Visits</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="about-us/about-us4.html"><img src="about-us/about-us4.png" alt="chan"></img></a>
+    <figcaption>Birthday</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="about-us/about-us5.html"><img src="about-us/about-us5.png" alt="bean"></img></a>
+    <figcaption>Lipstick Trials</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us6.html"><img src="about-us/about-us6.png" alt="bean"></img></a>
+    <figcaption>Bar Experience</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us7.html"><img src="about-us/about-us7.png" alt="bean"></img></a>
+    <figcaption>The First Party</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us8.html"><img src="about-us/about-us8.png" alt="bean"></img></a>
+    <figcaption>Shillong</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us9.html"><img src="about-us/about-us9.png" alt="bean"></img></a>
+    <figcaption>The Ring</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us10.html"><img src="about-us/about-us10.png" alt="bean"></img></a>
+    <figcaption>The picnic</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us11.html"><img src="about-us/about-us11.png" alt="bean"></img></a>
+    <figcaption>BYOB</figcaption>
+  </figure>
+  <figure class="wave">
+    <a href="about-us/about-us2.html"><img src="about-us/about-us2.png"></img></a>
+    <figcaption>Video Calls</figcaption>
+  </figure>
+
+</div>
+</html>
+
+<style>
+body {
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.wave {
+  float: left;
+  margin: 20px;
+  animation: wave ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave img {
+  border: 5px solid #f8f8f8;
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.wave figcaption {
+  text-align: justify;
+}
+
+.wave:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #ffffff;
+  top: -10px;
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+
+.wave:before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+</style>

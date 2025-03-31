@@ -1,0 +1,106 @@
+<div style="margin-top: 20px;">
+
+  <figure class="wave">
+    <a href="haridwar.html"><img src="haridwar.jpg" alt="haridwar"></img></a>
+    <figcaption>Haridwar/Rishikesh</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="goa.html"><img src="shweta-south.png" alt="goa"></img></a>
+    <figcaption>South Goa</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="goa1.html"><img src="shweta-goa.png" alt="goa"></img></a>
+    <figcaption>North Goa</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="ncr.html"><img src="shweta-holi.png" alt="holi"></img></a>
+    <figcaption>NCR</figcaption>
+  </figure>
+  
+    <figure class="wave">
+    <a href="shillong.html"><img src="shillong.jpg" alt="shillong"></img></a>
+    <figcaption>Your Family</figcaption>
+  </figure>
+
+<figure class="wave">
+    <a href="kasol.html"><img src="kasol.png" alt="kasol"></img></a>
+    <figcaption>Kheerganga</figcaption>
+  </figure>
+</div>
+
+<style>
+body {
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.wave {
+  float: left;
+  margin: 20px;
+  animation: wave ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave img {
+  border: 5px solid #f8f8f8;
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.wave figcaption {
+  text-align: justify;
+}
+
+.wave:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #ffffff;
+  top: -10px;
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+
+.wave:before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+</style>
