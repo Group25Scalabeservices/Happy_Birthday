@@ -1,0 +1,38 @@
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f); /* Birthday-themed background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within the card */
+  width: 80%; /* Make the card responsive */
+  max-width: 600px; /* Set a maximum width for the card */
+  margin: 0 auto; /* Center the card horizontally */
+  border: 2px solid #ff6f61; /* Attractive border */
+  background-color: #fff; /* White background for the card */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 16px;
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.card-img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  display: block; /* Ensure the image is displayed as a block element */
+}

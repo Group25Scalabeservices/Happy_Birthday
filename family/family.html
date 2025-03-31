@@ -1,0 +1,107 @@
+<div style="margin-top: 20px;">
+
+  <figure class="wave">
+    <a href="Restraunts.html"><img src="Restraunts.png" alt="restro"></img></a>
+    <figcaption>Restaurants</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="christmas.html"><img src="christmas.png" alt="christmas"></img></a>
+    <figcaption>Christmas</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="mausi.html"><img src="mausi.png" alt="mausi"></img></a>
+    <figcaption>Mausi</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="oreo.html"><img src="oreo.png" alt="oreo"></img></a>
+    <figcaption>Oreo</figcaption>
+  </figure>
+  
+    <figure class="wave">
+    <a href="family_.html"><img src="family_.jpg" alt="christmas"></img></a>
+    <figcaption>Your Family</figcaption>
+  </figure>
+
+  <figure class="wave">
+    <a href="chhath.html"><img src="chhath.png" alt="chhath"></img></a>
+    <figcaption>Chhath</figcaption>
+  </figure>
+
+</div>
+
+<style>
+body {
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.wave {
+  float: left;
+  margin: 20px;
+  animation: wave ease-in-out 0.5s infinite alternate;
+  transform-origin: center -36px;
+}
+
+.wave:hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+.wave img {
+  border: 5px solid #f8f8f8;
+  display: block;
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.wave figcaption {
+  text-align: justify;
+}
+
+.wave:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 1.5px solid #ffffff;
+  top: -10px;
+  left: 50%;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(35deg);
+}
+
+.wave:before {
+  content: "";
+  position: absolute;
+  top: -23px;
+  left: 50%;
+  display: block;
+  height: 44px;
+  width: 47px;
+  background-image: url(https://cdn.hashnode.com/res/hashnode/image/upload/v1602040503586/FW6g79WBY.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  z-index: 16;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+</style>
